@@ -34,6 +34,7 @@ return {
                     "docker_compose_language_service",
                     "bashls",
                     "marksman",
+                    "kotlin_language_server",
                 },
                 automatic_installation = true,
                 automatic_enable = true,
@@ -57,6 +58,14 @@ return {
                     "prettierd",
                     "biome",
                     "shfmt",
+                    -- Java
+                    "jdtls",
+                    "java-debug-adapter",
+                    "java-test",
+                    "google-java-format",
+                    -- Kotlin
+                    "ktlint",
+                    "kotlin-debug-adapter",
                     -- Linters
                     "golangci-lint",
                     "yamllint",
@@ -193,6 +202,8 @@ return {
                 bashls = { capabilities = capabilities, on_attach = on_attach },
 
                 marksman = { capabilities = capabilities, on_attach = on_attach },
+
+                kotlin_language_server = { capabilities = capabilities, on_attach = on_attach },
             }
 
             for name, conf in pairs(servers) do

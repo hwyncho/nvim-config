@@ -17,6 +17,8 @@ This document provides detailed information about language support in this Neovi
 | Markdown              | marksman                        | prettier             | markdownlint  | -        |
 | Shell                 | bashls                          | shfmt                | shellcheck    | -        |
 | Dockerfile            | dockerls                        | -                    | hadolint      | -        |
+| Java                  | jdtls (nvim-jdtls)              | google-java-format   | -             | java-debug-adapter |
+| Kotlin                | kotlin_language_server          | ktlint               | ktlint        | kotlin-debug-adapter |
 | Docker Compose        | docker_compose_language_service | -                    | -             | -        |
 
 ## Language Details
@@ -98,6 +100,20 @@ This document provides detailed information about language support in this Neovi
 ### Docker Compose
 
 - **LSP**: [docker_compose_language_service](https://github.com/microsoft/compose-language-service) - Docker Compose Language Server
+
+### Java
+
+- **LSP**: [jdtls](https://github.com/eclipse-jdtls/eclipse.jdt.ls) via [nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls) - Eclipse JDT Language Server
+- **Formatter**: [google-java-format](https://github.com/google/google-java-format) (preferred), jdtls built-in (fallback)
+- **Debugger**: [java-debug-adapter](https://github.com/microsoft/java-debug) + [java-test](https://github.com/microsoft/vscode-java-test) via nvim-jdtls bundles
+- **Config**: Separate plugin file (`lang-java.lua`), per-project workspace directory, OS-specific configuration
+
+### Kotlin
+
+- **LSP**: [kotlin_language_server](https://github.com/fwcd/kotlin-language-server) - Kotlin Language Server
+- **Formatter**: [ktlint](https://github.com/pinterest/ktlint) - Kotlin linter and formatter
+- **Linter**: [ktlint](https://github.com/pinterest/ktlint)
+- **Debugger**: [kotlin-debug-adapter](https://github.com/fwcd/kotlin-debug-adapter) via Mason
 
 ## Additional File Types
 

@@ -17,6 +17,8 @@ Most tools are **automatically installed** via [mason-tool-installer](https://gi
 | [prettier](https://prettier.io/)                                 | JS, TS, JSON, YAML, HTML, CSS, Markdown | Mason (auto)                 |
 | [prettierd](https://github.com/fsouza/prettierd)                 | Same as prettier (faster)               | Mason (auto)                 |
 | [biome](https://biomejs.dev/)                                    | JS, TS, JSON                            | Mason (auto)                 |
+| [google-java-format](https://github.com/google/google-java-format) | Java                                    | Mason (auto)                 |
+| [ktlint](https://github.com/pinterest/ktlint)                    | Kotlin                                  | Mason (auto)                 |
 | [shfmt](https://github.com/mvdan/sh)                             | Shell                                   | Mason (auto)                 |
 
 ## Linters
@@ -31,6 +33,7 @@ Most tools are **automatically installed** via [mason-tool-installer](https://gi
 | [hadolint](https://github.com/hadolint/hadolint)                | Dockerfile | Mason (auto)                 |
 | [markdownlint](https://github.com/DavidAnson/markdownlint)      | Markdown   | Mason (auto)                 |
 | [eslint_d](https://github.com/mantoni/eslint_d.js)              | JS, TS     | Mason (auto)                 |
+| [ktlint](https://github.com/pinterest/ktlint)                   | Kotlin     | Mason (auto)                 |
 | [stylelint](https://stylelint.io/)                              | CSS        | Mason (auto)                 |
 | [dotenv-linter](https://github.com/dotenv-linter/dotenv-linter) | .env files | Manual: `brew install dotenv-linter` |
 

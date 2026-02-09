@@ -43,6 +43,7 @@ return {
                     "python",
                     "delve",
                     "js",
+                    "kotlin",
                 },
                 automatic_installation = true,
                 handlers = {},

@@ -35,6 +35,8 @@ return {
                     javascript = { "biome", "prettierd", "prettier", stop_after_first = true },
                     typescript = { "biome", "prettierd", "prettier", stop_after_first = true },
                     markdown = { "prettierd", "prettier", "mdformat", stop_after_first = true },
+                    java = { "google-java-format" },
+                    kotlin = { "ktlint" },
                     sh = { "shfmt" },
                     dockerfile = {},
                 },

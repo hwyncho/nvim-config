@@ -14,6 +14,7 @@ return {
                 markdown = { "markdownlint" },
                 javascript = { "eslint_d" },
                 typescript = { "eslint_d" },
+                kotlin = { "ktlint" },
                 css = { "stylelint" },
                 dotenv = { "dotenv_linter" },
             }

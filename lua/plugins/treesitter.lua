@@ -24,6 +24,8 @@ return {
                     "markdown",
                     "markdown_inline",
                     "dockerfile",
+                    "java",
+                    "kotlin",
                 },
                 auto_install = true,
             }
