@@ -42,6 +42,35 @@ return {
     },
 
     {
+        "WhoIsSethDaniel/mason-tool-installer.nvim",
+        dependencies = { "mason-org/mason.nvim" },
+        config = function()
+            require("mason-tool-installer").setup {
+                ensure_installed = {
+                    -- Formatters
+                    "stylua",
+                    "black",
+                    "isort",
+                    "gofumpt",
+                    "goimports",
+                    "prettier",
+                    "prettierd",
+                    "biome",
+                    "shfmt",
+                    -- Linters
+                    "golangci-lint",
+                    "yamllint",
+                    "shellcheck",
+                    "hadolint",
+                    "markdownlint-cli2",
+                    "eslint_d",
+                    "stylelint",
+                },
+            }
+        end,
+    },
+
+    {
         "neovim/nvim-lspconfig",
         lazy = false,
         priority = 50,

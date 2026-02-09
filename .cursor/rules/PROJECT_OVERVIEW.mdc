@@ -22,7 +22,7 @@ This is a Neovim configuration project for full-stack developers. It uses:
 │   │   └── autocmds.lua     # Autocommands
 │   ├── plugins/             # Plugin specifications (lazy.nvim)
 │   │   ├── ui.lua           # UI/theme/statusline
-│   │   ├── lsp.lua          # LSP configuration
+│   │   ├── lsp.lua          # LSP, Mason, mason-tool-installer
 │   │   ├── completion.lua   # Autocompletion
 │   │   ├── navigation.lua   # File/buffer navigation
 │   │   ├── editing.lua      # Editing tools
