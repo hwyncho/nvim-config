@@ -7,7 +7,7 @@ A production-ready Neovim configuration for full-stack developers. This setup pr
 ## Features
 
 - **Plugin Manager**: [lazy.nvim](https://github.com/folke/lazy.nvim) with lazy loading for fast startup
-- **Theme**: [Catppuccin](https://github.com/catppuccin/nvim) (Frappe variant)
+- **Theme**: [Dracula](https://github.com/dracula/vim) (default), [Catppuccin](https://github.com/catppuccin/nvim) (Frappe variant)
 - **LSP Support**: 15 language servers with auto-installation via Mason
 - **Autocompletion**: nvim-cmp with LSP, buffer, path, and snippet sources
 - **Formatting**: conform.nvim with format-on-save

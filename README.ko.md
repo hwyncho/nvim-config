@@ -7,7 +7,7 @@
 ## 주요 기능
 
 - **플러그인 매니저**: [lazy.nvim](https://github.com/folke/lazy.nvim) - 지연 로딩으로 빠른 시작
-- **테마**: [Catppuccin](https://github.com/catppuccin/nvim) (Frappe 변형)
+- **테마**: [Dracula](https://github.com/dracula/vim) (기본), [Catppuccin](https://github.com/catppuccin/nvim) (Frappe 변형)
 - **LSP 지원**: Mason을 통한 15개 언어 서버 자동 설치
 - **자동 완성**: nvim-cmp (LSP, 버퍼, 경로, 스니펫 소스)
 - **포매팅**: conform.nvim - 저장 시 자동 포맷
