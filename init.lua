@@ -55,4 +55,6 @@ else
             },
         },
     })
+
+    vim.cmd.colorscheme(vim.g.colorscheme)
 end

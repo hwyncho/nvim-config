@@ -2,7 +2,7 @@ return {
     {
         "catppuccin/nvim",
         name = "catppuccin",
-        priority = 1000,
+        lazy = true,
         config = function()
             require("catppuccin").setup {
                 flavour = "frappe", -- latte, frappe, macchiato, mocha
@@ -63,7 +63,17 @@ return {
                     },
                 },
             }
-            vim.cmd.colorscheme "catppuccin-nvim"
+        end,
+    },
+
+    {
+        "dracula/vim",
+        name = "dracula",
+        lazy = true,
+        config = function()
+            vim.g.dracula_colorterm = 1
+            vim.g.dracula_italic = 1
+            vim.g.dracula_full_special_attrs_support = 1
         end,
     },
 
@@ -74,7 +84,7 @@ return {
         config = function()
             require("lualine").setup {
                 options = {
-                    theme = "catppuccin",
+                    theme = vim.g.colorscheme,
                     component_separators = { left = "", right = "" },
                     section_separators = { left = "", right = "" },
                     disabled_filetypes = {

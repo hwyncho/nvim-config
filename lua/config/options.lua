@@ -45,6 +45,9 @@ vim.o.autoread = true -- Automatically reload file when changed externally
 -- Colors
 vim.opt.termguicolors = true -- Enable 24-bit RGB color support (richer colors)
 
+-- Colorscheme
+vim.g.colorscheme = "dracula" -- Available: "dracula", "catppuccin-nvim"
+
 -- Line Numbers
 vim.opt.number = true -- Show line numbers
 vim.opt.relativenumber = false -- Disable relative line numbers
